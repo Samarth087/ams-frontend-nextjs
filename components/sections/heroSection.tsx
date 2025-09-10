@@ -73,14 +73,14 @@ export default function HeroSection() {
             {/* Background gradient overlay */}
             <div
               aria-hidden
-              className="absolute inset-0 -z-10 size-full bg-gradient-to-b from-transparent from-35% to-background"
+              className=" absolute inset-0 -z-10 size-full bg-gradient-to-b from-transparent from-35% to-background"
             />
-            <div className="mx-auto max-w-7xl px-6">
-              <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
+            <div className="max-w-7xl px-6">
+              <div className=" sm:mx-auto lg:mr-auto lg:mt-0">
                 <AnimatedGroup variants={transitionVariants}>
                   <Link
                     href="#link"
-                    className="bg-muted hover:bg-muted/80 border-border/50 group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-foreground/5 transition-colors duration-300"
+                    className="bg-muted hover:bg-muted/80 border-border/50 group  flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-foreground/5 transition-colors duration-300"
                   >
                     <span className="text-foreground text-sm">
                       Introducing Support for AI Models
@@ -104,7 +104,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mx-auto mt-8 max-w-4xl text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem] text-foreground"
+                  className=" max-w-4xl text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem] text-foreground"
                 >
                   Modern Solutions for Customer Engagement
                 </TextEffect>
@@ -114,7 +114,7 @@ export default function HeroSection() {
                   speedSegment={0.3}
                   delay={0.5}
                   as="p"
-                  className="mx-auto mt-8 max-w-2xl text-balance text-lg text-muted-foreground"
+                  className=" mt-8 max-w-2xl text-balance text-lg text-muted-foreground"
                 >
                   Highly customizable components for building modern websites
                   and applications that look and feel the way you mean it.
@@ -132,7 +132,7 @@ export default function HeroSection() {
                     },
                     ...transitionVariants,
                   }}
-                  className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
+                  className="mt-12 flex flex-col items-center gap-2 md:flex-row"
                 >
                   <div
                     key={1}
@@ -205,7 +205,7 @@ export default function HeroSection() {
               ref={revealImgRef}
               src={
                 theme === "dark"
-                  ? "/assets/images/dashboard-image-dark.svg"
+                  ? "/assets/images/background-dark.svg"
                   : "/assets/images/dashboard-image-light.svg"
               }
               alt="Dashboard reveal effect"
@@ -214,8 +214,8 @@ export default function HeroSection() {
                   position: "absolute",
                   height: "100%",
                   width: "100%",
-                  top: "-50%",
-                  left: "0",
+                  top: "-40%",
+                  right: "0",
                   zIndex: 5,
                   mixBlendMode: "lighten",
                   opacity: 0.4,
